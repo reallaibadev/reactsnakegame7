@@ -1,0 +1,75 @@
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+/* Board */
+.board {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: 4px solid #333;
+    position: relative;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Cells */
+.cell {
+    border: 1px solid #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Colors */
+.cell:nth-child(4n+1) {
+    background: #ff4d4d;
+    color: white;
+}
+
+.cell:nth-child(4n+2) {
+    background: #ffeb3b;
+    color: #000;
+}
+
+.cell:nth-child(4n+3) {
+    background: #4da6ff;
+    color: white;
+}
+
+.cell:nth-child(4n) {
+    background: #4caf50;
+    
+}
+
+/* Snake */
+.snake-88-48 {
+    position: absolute;
+    top: 60px;
+    left: 270px;
+    height: 280px;
+    width: 90px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+/* Ladder */
+.ladder-65-94 {
+    position: absolute;
+    top: 6px;
+    left: 100px;
+    height: 300px;
+    width: 60px;
+    object-fit: contain;
+    pointer-events: none;
+}
